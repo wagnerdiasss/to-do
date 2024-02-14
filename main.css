@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0px;
+    background: url("bg.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        background: url("rj.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+li {
+    background-color: rgba(248, 249, 250, 0.282);
+    padding: 15px;
+    border-radius: 30px;
+    transition: background-color 0.3 ease;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(3px);
+    max-width: 100%;
+}
+
+li.toggled label {
+    text-decoration: line-through;
+}
+
+/* li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+input[type="button"] {
+    text-align: center;
+
+
+}
+
+button {
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: rgb(59, 7, 215);
+    border: 0cap;
+    outline: 2px solid rgba(0, 162, 255, 0.542);
+
+}
+
+#taskInput {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: 0cap;
+}
+
+#taskInput:focus {
+    outline: 2px solid rgba(0, 162, 255, 0.542);
+}
+
+ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgb(248, 241, 241);
+    padding: 5px;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(6, 244, 38);
+}
+
+input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.footer {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
